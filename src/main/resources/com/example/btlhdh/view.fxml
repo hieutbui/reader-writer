@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btlhdh.Controller">
+   <children>
+      <AnchorPane prefHeight="575.0" prefWidth="763.0" style="-fx-background-color: #dcaab1;">
+         <children>
+            <Button fx:id="addWriter" contentDisplay="CENTER" layoutX="33.0" layoutY="255.0" mnemonicParsing="false" onAction="#setAddWriter" prefHeight="66.0" prefWidth="113.0" text="Add Writer" />
+            <Button fx:id="addReader" contentDisplay="CENTER" layoutX="406.0" layoutY="255.0" mnemonicParsing="false" onAction="#setAddReader" prefHeight="66.0" prefWidth="113.0" text="Add Reader" />
+            <HBox fx:id="waiting" focusTraversable="true" layoutX="33.0" layoutY="79.0" prefHeight="118.0" prefWidth="489.0" style="-fx-border-color: #a63d4c;" AnchorPane.rightAnchor="241.0">
+               <effect>
+                  <Blend />
+               </effect>
+            </HBox>
+            <Label layoutX="243.0" layoutY="23.0" text="Waiting">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="381.0" text="Service Area">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="620.0" layoutY="23.0" text="Screen">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="screen" layoutX="547.0" layoutY="78.0" prefHeight="463.0" prefWidth="203.0" />
+            <HBox fx:id="serviceArea" focusTraversable="true" layoutX="30.0" layoutY="423.0" prefHeight="118.0" prefWidth="489.0" style="-fx-border-color: #204429;" />
+            <Button fx:id="start" layoutX="235.0" layoutY="255.0" mnemonicParsing="false" onAction="#setStart" prefHeight="66.0" prefWidth="79.0" text="Start" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a63d4c" height="27.0" layoutX="170.0" layoutY="205.0" stroke="#c8777b" strokeType="INSIDE" width="25.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#204429" height="27.0" layoutX="314.0" layoutY="205.0" stroke="#636f44" strokeType="INSIDE" width="25.0" />
+            <Label layoutX="202.0" layoutY="210.0" text="Writer" />
+            <Label layoutX="344.0" layoutY="210.0" text="Reader" />
+         </children>
+      </AnchorPane>
+   </children>
+</FlowPane>
